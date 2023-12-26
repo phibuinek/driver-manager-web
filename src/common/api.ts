@@ -15,8 +15,13 @@ const api = axios.create({
 api.interceptors.request.use(
   (config) => {
     const token = Cookies.get("accessToken");
+    console.log("token: ", token);
+
     if (token) {
-      config.headers["Authorization"] = `Bearer ${token}`;
+      const parsedToken = JSON.parse(token);
+      console.log("parsedToken: ", parsedToken);
+
+      config.headers["Authorization"] = `Bearer ${parsedToken}`;
     }
     return config;
   },
@@ -33,13 +38,15 @@ function* login(params) {
   console.log("params: ", params);
 
   const response = yield api.post("auth", params);
-  console.log(response);
+  //console.log(response);
   return response.data;
 }
 
 // get curent user
 function* getCurrentUser() {
   const response = yield api.get("users/me");
+  //console.log(response);
+
   return response.data;
 }
 

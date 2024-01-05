@@ -1,10 +1,10 @@
  "use client"
-import LoginPage from "./login/page";
+import LoginPage from "./Login/page";
 
 //rafce
 export default function Home() {
   return (
-    <div>
+    <div className=" h-screen bg-primary font-Poppins">
       <LoginPage/>
     </div>
   )

@@ -9,6 +9,9 @@ import { applyMiddleware, legacy_createStore as createStore } from 'redux';
 import rootReducer from '../common/reducers/reducers';
 import { Provider } from 'react-redux';
 import rootSaga from '../common/sagas/saga';
+import Image from 'next/image';
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,7 +35,13 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <Provider store={store}>
-        {children}
+        <Navbar/>
+        <div className='grid'>
+          <div className='grid-cols-2'>
+            <Sidebar/>
+          </div>
+          <div className='grid-cols-10'>{children}</div>
+        </div>
       </Provider>
         </body>
     </html>

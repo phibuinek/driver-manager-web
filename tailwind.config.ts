@@ -9,13 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        Poppins: ['"Poppins"', 'asdf']
+        Poppins: ['Inter', 'sans-serif']
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      textColor: {
+        'primary': '#2FA060',
+      },
+      backgroundColor: {
+        'primary': '#F6F9F7',
+        'button': '#2FA060',
+      },
+      borderColor: {
+        'primary': '#F6F9F7',
+        'login': 'rgba(47, 160, 96, 0.30)',
+      }
     },
   },
   plugins: [],

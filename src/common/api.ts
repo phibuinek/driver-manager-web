@@ -38,14 +38,14 @@ function* login(params) {
   console.log("params: ", params);
 
   const response = yield api.post("auth", params);
-  //console.log(response);
+  console.log(response);
   return response.data;
 }
 
 // get curent user
 function* getCurrentUser() {
   const response = yield api.get("users/me");
-  //console.log(response);
+  console.log(response);
 
   return response.data;
 }

@@ -36,12 +36,8 @@ export default function RootLayout({
       <body className={inter.className}>
       <Provider store={store}>
         <Navbar/>
-        <div className='grid'>
-          <div className='grid-cols-2'>
-            <Sidebar/>
-          </div>
-          <div className='grid-cols-10'>{children}</div>
-        </div>
+        <Sidebar/>
+        {children}
       </Provider>
         </body>
     </html>

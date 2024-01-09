@@ -35,8 +35,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
       <Provider store={store}>
-        <Navbar/>
-        <Sidebar/>
+        {/* <Navbar/> */}
+        {/* <Sidebar/> */}
         {children}
       </Provider>
         </body>

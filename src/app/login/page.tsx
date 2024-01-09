@@ -10,20 +10,23 @@ const LoginPage = () => {
   const dispatch = useDispatch();
   return (
     ///Users/phamthanh/Documents/GitHub/driver-manager-web/public/assets/logo_app_1 1.svg
-    <div className="flex justify-evenly items-center bg-white mt-20"
-    style={{ 
-      backgroundImage: `url('/assets/bg.svg')`, 
-      backgroundPosition: 'center', 
-      backgroundSize: 'cover', 
-      backgroundRepeat: 'no-repeat' 
-    }}>
+    <div
+    className="relative min-h-screen bg-white"
+      style={{
+        backgroundImage: "url('/assets/bg.svg')",
+        backgroundPosition: "top right", // Thay đổi ở đây
+        backgroundSize: "cover",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="absolute top-0 left-0 p-4 flex items-center">
         <img src="/assets/logo_app_1 1.svg" alt="Logo" className="h-8 mr-2" />{" "}
         {/* Adjust the h-8 class to size your logo appropriately */}
         <h1 className="text-green-500 uppercase font-bold">Driver Manager</h1>
       </div>
-
-      <Formik
+      
+       <div className = " absolute top-0 right-0 mt-10 mr-10 z-50">
+       <Formik
         initialValues={{ username: "", password: "" }}
         onSubmit={(values, { setSubmitting }) => {
           console.log(values);
@@ -124,6 +127,9 @@ const LoginPage = () => {
           </Form>
         )}
       </Formik>
+       </div>
+
+     
     </div>
   );
 };

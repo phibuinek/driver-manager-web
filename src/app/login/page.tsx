@@ -9,19 +9,18 @@ import Image from "next/image";
 const LoginPage = () => {
   const dispatch = useDispatch();
   return (
-    ///Users/phamthanh/Documents/GitHub/driver-manager-web/public/assets/logo_app_1 1.svg
     <div
     className="relative min-h-screen bg-white"
-      style={{
-        backgroundImage: "url('/assets/bg.svg')",
-        backgroundPosition: "top right", // Thay đổi ở đây
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="absolute top-0 left-0 p-4 flex items-center">
-        <img src="/assets/logo_app_1 1.svg" alt="Logo" className="h-8 mr-2" />{" "}
-        {/* Adjust the h-8 class to size your logo appropriately */}
+    style={{
+      backgroundImage: "url('/assets/backroundLogin.svg') ",
+      backgroundPosition: "center ", // Thay đổi giá trị ở đây
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+
+    }}
+  >
+      <div className="absolute top-0 left-10 p-4 flex items-center">
+        <img src="/assets/logo/logo-app.png" alt="Logo" className="h-8 mr-2" />{" "}
         <h1 className="text-green-500 uppercase font-bold">Driver Manager</h1>
       </div>
       

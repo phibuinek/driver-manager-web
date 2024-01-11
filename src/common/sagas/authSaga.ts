@@ -8,7 +8,7 @@ import { log } from "console";
 
 function* handleLogin(params) {
   const route = params.router
-   console.log('route', route);
+   let errMesage = '';
   try {
     let res = yield Api.login(params.values);
     if (res.statusCode != 201) {

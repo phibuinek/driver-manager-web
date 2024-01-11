@@ -78,7 +78,7 @@ const ProductSection = () => {
           alt="Product Image"
           layout="fill"
           objectFit="contain" // This will make sure the image is scaled correctly
-        /> */}
+        /> 
         <Swiper
         spaceBetween={30}
         centeredSlides={true}

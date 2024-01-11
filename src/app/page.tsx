@@ -7,6 +7,9 @@ import HighlightSection from "./components/Home/HighLightSection";
 import ProductSection from "./components/Home/ProductSection";
 import ForgotPasswordPage from "./ForgotPassword/page";
 
+
+
+
 //rafce
 export default function Home() {
   return (

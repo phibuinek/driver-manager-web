@@ -5,7 +5,7 @@ import Header from "./components/Home/Header";
 import HeroSection from "./components/Home/HeroSection";
 import ProductSection from "./components/Home/ProductSection";
 import ForgotPasswordPage from "./ForgotPassword/page";
-import LoginPage from "./Login/page";
+
 
 //rafce
 export default function Home() {

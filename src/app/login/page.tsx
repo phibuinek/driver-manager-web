@@ -1,13 +1,25 @@
 "use client";
 import styles from "./loginPage.module.css";
-
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { useDispatch } from "react-redux";
 import { LOGIN_REQUEST } from "@/common/actions/auth";
 import Image from "next/image";
+import { BrowserRouter, Route } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import { log } from "console";
+import { useRouter } from "next/navigation";
+
+
 
 const LoginPage = () => {
+  const router = useRouter()
+
   const dispatch = useDispatch();
+  const handleSubmit =(values,{setSubmitting}) =>{
+   
+    dispatch({ type: LOGIN_REQUEST, payload: {values, router} });
+    setSubmitting(false);
+  }
   return (
     <div
       className="relative min-h-screen bg-white"
@@ -23,13 +35,14 @@ const LoginPage = () => {
         <h1 className="text-green-500 uppercase font-bold">Driver Manager</h1>
       </div>
 
-      <div className=" absolute top-0 right-0 mt-10 mr-10 z-50">
+      <div className=" absolute top-0 right-0 mt-10 mr-10 ml-10 z-50">
         <Formik
           initialValues={{ username: "", password: "" }}
           onSubmit={(values, { setSubmitting }) => {
-            console.log(values);
-            dispatch({ type: LOGIN_REQUEST, payload: values });
-            setSubmitting(false);
+            handleSubmit(values,{setSubmitting})
+            // console.log(values);
+            // dispatch({ type: LOGIN_REQUEST, payload: values });
+            // setSubmitting(false);
           }}
         >
           {({ isSubmitting }) => (
@@ -40,7 +53,7 @@ const LoginPage = () => {
                   className="block text-gray-300 text-sm font-bold mb-2"
                   htmlFor="username"
                 ></label>
-                <div className="inline-flex text-sm appearance-none border-b-2 border-login w-full pb-2 text-gray-300 leading-tight focus:outline-none focus:shadow-outline">
+                <div className="inline-flex text-sm appearance-none border-b-2 border-login w-full pb-2 text-black-300 leading-tight focus:outline-none focus:shadow-outline">
                   <Image
                     className=""
                     src={require("/public/assets/Icon.png")}
@@ -69,7 +82,7 @@ const LoginPage = () => {
                   className="block text-gray-300 text-sm font-bold mb-2"
                   htmlFor="password"
                 ></label>
-                <div className="inline-flex text-sm appearance-none border-b-2 border-login w-full pb-2 text-gray-300 leading-tight focus:outline-none focus:shadow-outline">
+                <div className="inline-flex text-sm appearance-none border-b-2 border-login w-full pb-2 text-black-300 leading-tight focus:outline-none focus:shadow-outline">
                   <Image
                     className=""
                     src={require("/public/assets/lock-02.png")}
@@ -113,14 +126,14 @@ const LoginPage = () => {
                   Quên mật khẩu ?
                 </a>
               </div>
-              <div className="flex items-center justify-between">
-                <button
-                  type="submit"
-                  className="bg-button hover:bg-button text-white font-bold py-2 px-24 rounded-full focus:outline-none focus:shadow-outline my-10 mx-5"
-                  disabled={isSubmitting}
-                >
-                  Đăng nhập
-                </button>
+              <div className="flex items-center justify-center">
+              <button
+                type="submit"
+                className="bg-button hover:bg-button text-white font-bold py-2 px-24 rounded-full focus:outline-none focus:shadow-outline my-10 mx-5"
+                disabled={isSubmitting}
+              >
+                Đăng nhập
+              </button>
               </div>
             </Form>
           )}

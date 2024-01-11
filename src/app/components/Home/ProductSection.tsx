@@ -48,6 +48,7 @@ const ProductSection = () => {
           {/* <BsChevronLeft size={50} color="#000" /> */}
         </div>
         <h2 className="text-2xl text-[#252525] font-semibold">Sản phẩm của chúng tôi</h2>
+        <div className='border border-[#2FA060]'></div>
         <div className="cursor-pointer">
           {/* Replace 'RightArrowIcon' with your actual right arrow icon component */}
           {/* <BsChevronRight size={50} color="#000"/> */}
@@ -55,6 +56,7 @@ const ProductSection = () => {
       </div>
 
       {/* Product image or visual representation */}
+
       <div className="flex relative justify-center items-center"> {/* Adjust height as needed */}
         {/* <Image
           src={yourProductImage}
@@ -62,6 +64,9 @@ const ProductSection = () => {
           layout="fill"
           objectFit="contain" // This will make sure the image is scaled correctly
         />
+=======
+      <div className="relative h-[500px] w-full"> {/* Adjust height as needed */}
+
         <Image
           src={yourProductImage}
           alt="Product Image"
@@ -110,9 +115,5 @@ const ProductSection = () => {
 
 export default ProductSection;
 
-// Replace 'LeftArrowIcon' and 'RightArrowIcon' with your actual icon components
-// If you're using SVGs as React components, make sure to import them:
-// import { ReactComponent as LeftArrowIcon } from '../../../../path-to-icons/left-arrow.svg';
-// import { ReactComponent as RightArrowIcon } from '../../../../path-to-icons/right-arrow.svg';
 
 

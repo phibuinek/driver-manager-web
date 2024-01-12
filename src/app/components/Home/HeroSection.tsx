@@ -7,38 +7,39 @@
 //       </div>
 //     );
 //   };
-  
+
 //   export default HeroSection;
 
 import Image from "next/image";
 
 const HeroSection = () => {
-    return (
-      // The main container with padding and background color
-      <div className="flex items-center justify-between p-10 bg-white m-16">
-        <div className="text-left flex-1">
-          <h1 className="text-4xl text-[#000] font-bold mb-4 py-4 text-pretty">
-            Giải pháp cho lĩnh vực quản lý doanh nghiệp Logistic và Shipping đầu tiên của Việt Nam
-          </h1>
-          {/* <p className="mb-6">Mô tả ngắn gọn về dịch vụ...</p> */}
-          
-          <button className="bg-[#2FA060] text-white px-6 p-3 rounded hover:bg-green-400 transition-colors rounded-xl">
-            Liên hệ ngay để trải nghiệm dịch vụ
-          </button>
-        </div>
-        <div className="flex-1">
-          {/* Here you should insert your image component or an img tag referencing your illustration */}
-          {/* <img src="/path-to-your-illustration.png" alt="Illustration" /> */}
-          <Image src={require("../../../../public/assets/banner/banner1.png")} alt=""
-          width={540}  // Adjust the width as per your requirement
+  return (
+    // The main container with padding and background color
+    <div className="flex items-center justify-between p-10 bg-white m-16">
+      <div className="text-left flex-1">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl text-[#000] font-bold mb-4 py-4 leading-relaxed">
+          Giải pháp cho lĩnh vực quản lý doanh nghiệp Logistic và Shipping đầu
+          tiên của Việt Nam
+        </h1>
+        {/* <p className="mb-6">Mô tả ngắn gọn về dịch vụ...</p> */}
+
+        <button className="bg-[#2FA060] text-white px-6 p-3 rounded hover:bg-green-400 transition-colors rounded-xl">
+          Liên hệ ngay để trải nghiệm dịch vụ
+        </button>
+      </div>
+      <div className="flex-1">
+        {/* Here you should insert your image component or an img tag referencing your illustration */}
+        {/* <img src="/path-to-your-illustration.png" alt="Illustration" /> */}
+        <Image
+          src={require("../../../../public/assets/banner/banner1.png")}
+          alt=""
+          width={540} // Adjust the width as per your requirement
           height={320} // Adjust the height as per your requirement
           layout="responsive" // This will make the image responsive
-          />
-        </div>
-        
+        />
       </div>
-    );
-  };
-  
-  export default HeroSection;
-  
+    </div>
+  );
+};
+
+export default HeroSection;

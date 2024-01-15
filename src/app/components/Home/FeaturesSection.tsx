@@ -74,10 +74,9 @@ const FeaturesSection = () => {
               </div>
               <div className="ml-4 p-5">
                 <ul className="list-disc space-y-2 pl-5 text-gray-600">
-                  <li>Tự động hóa quy trình tính chi phí cho doanh nghiệp</li>
-                  <li>Tính năng chốt chỗ theo từng tháng</li>
+                  <li>Các chỉ số đưa ra được thiết kế nhằm phục vụ các đối tượng cụ thể, giúp doanh nghiệp xác định đúng định hướng và thực hiện chính xác.</li>
+                  <li>Đo lường hiệu quả của từng chương trình cũng như các chỉ số kinh doanh, quản lý thông qua các báo cáo chi tiết và trực quan.</li>
                   <li>Ghi chép số liệu và lịch sử hoạt động cho đơn vị sử dụng</li>
-                  <li>Số liệu minh bạch cho từng chuyến</li>
                 </ul>
               </div>
             </div>
@@ -86,7 +85,7 @@ const FeaturesSection = () => {
           {/* Feature 2 */}
           {/* Repeat the structure for Feature 2 */}
           <div className="bg-[#FFFFFF] p-8 rounded-lg rounded-3xl shadow-md mb-4 flex-1 mx-4">
-          <h3 className="text-xl text-[#252525] font-semibold mb-4 text-center">Thông kê chính xác</h3>
+          <h3 className="text-xl text-[#252525] font-semibold mb-4 text-center">Quản lý thuận tiện</h3>
             <div className="flex items-start items-center">
               {/* Assume your icon is an SVG or has fixed dimensions */}
               
@@ -100,10 +99,9 @@ const FeaturesSection = () => {
               </div>
               <div className="ml-4 p-5">
                 <ul className="list-disc space-y-2 pl-5 text-gray-600">
-                  <li>Tự động hóa quy trình tính chi phí cho doanh nghiệp</li>
-                  <li>Tính năng chốt chỗ theo từng tháng</li>
-                  <li>Ghi chép số liệu và lịch sử hoạt động cho đơn vị sử dụng</li>
-                  <li>Số liệu minh bạch cho từng chuyến</li>
+                  <li>Chủ động thực hiện chiến lược quản lý, khả năng chủ động ứng phó với những thay đổi của thị trường và nguồn nhân lực,</li>
+                  <li>Dễ dàng thiết lập và kiểm soát khu vực khách hàng, nhân viên.</li>
+                  <li>Dữ liệu thực sự sẽ giúp doanh nghiệp đưa ra quyết định tốt hơn, chính xác hơn và đưa ra các chiến lược hiệu quả hơn</li>
                 </ul>
               </div>
             </div>

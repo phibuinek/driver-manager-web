@@ -43,11 +43,15 @@ const Header = () => {
           <Image src={require("../../../../public/assets/logo/logo-app.png")} alt="" width={50} height={50} />
           <span className="font-bold text-xl text-[#2FA060]">Driver Management</span>
         </div>
-        <div className="flex items-center space-x-4">   
-          <FaPhone className="text-blue-500" />
+        <div className="flex items-center">   
+          <div className="mx-6 flex">
+          <FaPhone className="text-black mr-2 mt-1" />
           <span className="text-[#000]">0975 1187 362</span>
-          <FaEnvelope className="text-blue-500" />
+          </div>
+          <div className="flex items-center">
+          <FaEnvelope className="text-black mr-2" />
           <span className="text-[#000]">company@vn.com</span>
+          </div>
         </div>  
         <Link href="/login" className="bg-[#2FA060] text-white px-6 py-2 rounded-lg shadow-lg hover:bg-green-400 transition-colors">
             Đăng nhập

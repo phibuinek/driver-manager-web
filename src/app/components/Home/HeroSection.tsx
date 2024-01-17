@@ -15,7 +15,7 @@ import Image from "next/image";
 const HeroSection = () => {
     return (
       // The main container with padding and background color
-      <div className="flex items-center justify-between p-10 bg-white">
+      <div className="flex items-center justify-between p-10 bg-white m-16">
         <div className="text-left flex-1">
           <h1 className="text-4xl text-[#000] font-bold mb-4 py-4 text-pretty">
             Giải pháp cho lĩnh vực quản lý doanh nghiệp Logistic và Shipping đầu tiên của Việt Nam

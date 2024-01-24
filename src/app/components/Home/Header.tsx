@@ -32,28 +32,25 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
+
 
 const Header = () => {
   return (
-    <header className="bg-white py-4 shadow-md">
+    <header className="py-4">
       <div className="container mx-auto flex items-center justify-between px-4">
-        <div className="flex items-center space-x-4">
+        <div className="block items-center space-x-4">
           {/* Sử dụng Image component của Next.js nếu bạn có một file ảnh, hoặc thẻ img thông thường */}
-          <Image src={require("../../../../public/assets/logo/logo-app.png")} alt="" width={50} height={50} />
-          <span className="font-bold text-xl text-[#2FA060]">Driver Management</span>
+          <Image className="items-center ml-10" src={require("../../../../public/assets/logo/logo-app.png")} alt="" width={70} height={70} />
+          <h1 className="font-bold text-xl text-[#2FA060]">Driver Manager</h1>
+          
         </div>
-        <div className="flex items-center">   
-          <div className="mx-6 flex">
-          <FaPhone className="text-black mr-2 mt-1" />
-          <span className="text-[#000]">0975 1187 362</span>
-          </div>
-          <div className="flex items-center">
-          <FaEnvelope className="text-black mr-2" />
-          <span className="text-[#000]">company@vn.com</span>
-          </div>
+        <div className="flex items-center space-x-20 font-semibold">   
+          <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#">Trang chủ</a></button>
+          <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#product">Sản phẩm</a></button>
+          <button className="active:text-primary hover:text-primary focus:text-primary">Điều khoản</button>
+          <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#footer">Liên hệ</a></button>
         </div>  
-        <Link href="/login" className="bg-[#2FA060] text-white px-6 py-2 rounded-lg shadow-lg hover:bg-green-400 transition-colors">
+        <Link href="/login" className="mr-10 bg-inherit text-primary font-semibold px-6 py-2 rounded-lg outline text-base hover:bg-green-400 transition-colors hover:text-white">
             Đăng nhập
         </Link>
       </div>

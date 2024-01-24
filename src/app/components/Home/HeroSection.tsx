@@ -15,15 +15,18 @@ import Image from "next/image";
 const HeroSection = () => {
     return (
       // The main container with padding and background color
-      <div className="flex items-center justify-between p-10 bg-white m-16">
+      <div className="flex items-center justify-between p-10 bg-white mx-16 mt-10">
         <div className="text-left flex-1">
-          <h1 className="text-4xl text-[#000] font-bold mb-4 py-4 text-pretty">
-            Giải pháp cho lĩnh vực quản lý doanh nghiệp Logistic và Shipping đầu tiên của Việt Nam
-          </h1>
+          <div className="block text-3xl font-bold mb-4 py-4 text-pretty leading-10">
+            <h1 className="text-primary font-extrabold text-5xl leading-relaxed">GIẢI PHÁP HIỆU QUẢ</h1>
+            <h1 className="text-black">Giúp Quản lý Vận Tải &</h1>
+            <h1 className="text-black">Vận hành Đội Xe</h1>
+            <h1 className="text-black">cho  Doanh  nghiệp  tại  Việt  Nam</h1>
+          </div>
           {/* <p className="mb-6">Mô tả ngắn gọn về dịch vụ...</p> */}
           
           <button className="bg-[#2FA060] text-white px-6 p-3 rounded hover:bg-green-400 transition-colors rounded-xl">
-            Liên hệ ngay để trải nghiệm dịch vụ
+            Liên hệ ngay để trải nghiệm dịch vụ của chúng tôi
           </button>
         </div>
         <div className="flex-1">

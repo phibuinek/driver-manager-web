@@ -11,6 +11,9 @@ const config: Config = {
       fontFamily: {
         Poppins: ["Inter", "sans-serif"],
       },
+      // listStyleImage: {
+      //   point: 'url("./public/assets/home-03.svg")'
+      // },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -26,10 +29,18 @@ const config: Config = {
       borderColor: {
         primary: "#F6F9F7",
         login: "rgba(47, 160, 96, 0.30)",
+
       },
       colors: {
         "active-sidebar": "#2FA060",
+        'primary': '#F6F9F7',
+        'button': '#2FA060',
+        'nod': 'bg-gradient-to-r from-green-200 via-green-300 to-blue-500',
       },
+
+
+
+
     },
   },
   plugins: [],

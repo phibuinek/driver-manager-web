@@ -3,7 +3,7 @@
 
 import React from 'react';
 import Navbar from '../components/Navbar';
-import Sidebar from '../components/Sidebar';
+
 
 
 // export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function Layout({
     <div>
         <div><Navbar/></div>
         <div className='flex'>
-            <div className='mt-10'><Sidebar/></div>
+            <div className='mt-10'></div>
             <div className='mt-40 ml-20'>{children}</div>
         </div>
     </div>

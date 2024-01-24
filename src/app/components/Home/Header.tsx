@@ -47,7 +47,10 @@ const Header = () => {
         <div className="flex items-center space-x-20 font-semibold">   
           <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#">Trang chủ</a></button>
           <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#product">Sản phẩm</a></button>
-          <button className="active:text-primary hover:text-primary focus:text-primary">Điều khoản</button>
+          <button className="active:text-primary hover:text-primary focus:text-primary">
+          
+          <a href="/Privacy">Điều khoản</a>
+          </button>
           <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#footer">Liên hệ</a></button>
         </div>  
         <Link href="/login" className="mr-10 bg-inherit text-primary font-semibold px-6 py-2 rounded-lg outline text-base hover:bg-green-400 transition-colors hover:text-white">

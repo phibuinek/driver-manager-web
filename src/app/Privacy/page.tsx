@@ -2,45 +2,20 @@ import React from 'react'
 
 const privacyPage = () => {
   return (
-    <div className='text-center justify-center items-center'>
-        <div className='text-6xl '>IES PRIVACY</div>
-        <div className='text-xl text-center justify-center items-center'>
-        1. Định nghĩa
-1.1. Công ty Industrial Embedded Solutions (tên Tiếng Anh là 
-Industrial Embedded Solutions - viết tắt là IES)  là công ty được 
-thành lập hợp lệ và hoạt động trong lĩnh vực Công nghệ 
-thông tin theo pháp luật của nước Cộng Hòa Xã Hội Chủ 
-Nghĩa Việt Nam, có Giấy Chứng Nhận Đăng Ký Doanh 
-Nghiệp.
-- Địa chỉ: 36 đường D5, Phường 25, Quận Bình Thạnh, 
-Thành phố Hồ Chí Minh, Việt Nam.
-- Mã số thuế: 0318004045 do Sở Kế hoạch và Đầu tư thành phố Hồ Chí 
-Minh cấp vào ngày 21-08-2023.
-1.2. Ứng dụng DriveManager: là ứng dụng cho phép người sử 
-dụng quản lý các tài xế, phụ xe, quản lý các xe, các chuyến đi, có thể 
-giao chuyến cho tài xế, phụ xe và xem được số liệu báo cáo sau khi hoàn
-thành các chuyến. Ngoài ra ứng dụng còn cho phép quản lý thu chi, cho 
-phép người sử dụng quản lý chi phí, lương cho tài xế sau mỗi chuyến 
-hoàn thành
-1.3. Tài Khoản DriveManager: là tài khoản điện tử được 
-tạo trên hệ thống công nghệ thông tin của DriveManager do
-Công ty Industrial Embedded Solutions hoặc Người Sử Dụng tạo
-lập và quản lý thông qua nhiều hình thức khác nhau, bao 
-gồm nhưng không giới hạn bởi ứng dụng trên điện thoại 
-di động, website.
-1.4. Người Sử Dụng: là các khách hàng có nhu cầu sử 
-dụng ứng dụng DriveManager.
-1.5. API (Application Programming Interface): là 
-giao diện lập trình ứng dụng.
-2. Phạm vi áp dụng
-Chính sách này quy định về cách thức mà DriveManager thu 
-thập, sử dụng, bảo mật thông tin áp dụng đối với các thông tin 
-được Người sử dụng cung cấp khi sử dụng Tài khoản 
-DriveManager qua Ứng Dụng DriveManager trên điện 
-thoại/website hoặc qua bên thứ ba sử dụng API của 
-DriveManager.
-3. Mục đích thu thập thông tin:
-Người Sử Dụng đồng ý rằng DriveManager có quyền thu thập, 
+    <div className=' text-center justify-center items-center mx-24 my-5 w-'>
+        <div className='text-6xl '>ĐIỀU KHOẢN SỬ DỤNG</div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>2. Phạm vi sử dụng:</h1>
+          <h1>Chính sách này quy định về cách thức mà DriveManager thu 
+          thập, sử dụng, bảo mật thông tin áp dụng đối với các thông tin 
+          được Người sử dụng cung cấp khi sử dụng Tài khoản 
+          DriveManager qua Ứng Dụng DriveManager trên điện 
+          thoại/website hoặc qua bên thứ ba sử dụng API của 
+          DriveManager.</h1>
+        </div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>3. Mục đích thu thập thông tin:</h1>
+          <h1>Người Sử Dụng đồng ý rằng DriveManager có quyền thu thập, 
 sử dụng, lưu trữ, tiết lộ và trao đổi các thông tin về Người Sử 
 Dụng, thông tin liên quan đến Người Sử Dụng và bất kỳ giao 
 dịch nào liên quan đến Người Sử Dụng thông qua Tài Khoản 
@@ -96,10 +71,12 @@ Người Sử Dụng;
 3.6.2. Thực hiện các hoạt động khác được pháp luật hiện 
 hành cho phép;
 3.6.3. Cung cấp cho các cơ quan nhà nước có thẩm quyền
-hoặc cung cấp thông tin theo yêu cầu của pháp luật.
-4. Các thông tin khách hàng được thu thập
-DriveManager sẽ thu thập các loại thông tin sau đây:
-4.1. Thông tin khi Người Sử Dụng mở Tài Khoản 
+hoặc cung cấp thông tin theo yêu cầu của pháp luật.</h1>
+        </div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>4. Các thông tin khách hàng được thu thập</h1>
+          <h1>DriveManager sẽ thu thập các loại thông tin sau đây:</h1>
+          <h1>4.1. Thông tin khi Người Sử Dụng mở Tài Khoản 
 DriveManager
 - Email đăng ký
 - Tên doanh nghiệp
@@ -160,9 +137,11 @@ mình theo quy định pháp luật;
 quy định;
 4.4.3. Đánh giá việc Người Sử Dụng đã tuân thủ, đang 
 tuân thủ và có thể tiếp tục tuân thủ tất cả các nghĩa vụ của 
-mình theo Chính Sách của DriveManager hay không.
-5. Phạm vi sử dụng thông tin
-5.1. Ngoài các mục đích được nêu trong Chính Sách này, 
+mình theo Chính Sách của DriveManager hay không.</h1>
+        </div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>5. Phạm vi sử dụng thông tin:</h1>
+          <h1>5.1. Ngoài các mục đích được nêu trong Chính Sách này, 
 DriveManager cam kết không chuyển nhượng, cho thuê, tiết lộ,
 chia sẻ thông tin của Người Sử Dụng cho bất kỳ bên thứ ba mà 
 không có sự chấp thuận của Người Sử Dụng hoặc theo đúng 
@@ -198,10 +177,12 @@ của các cơ quan quản lý nhà nước khác;
 - DriveManager cũng có thể truy cập, bảo vệ và chia sẻ 
 thông tin khi DriveManager có cơ sở phát hiện, ngăn chặn và 
 giải quyết gian lận và hoạt động phi pháp khác.
-5.2.4. Có sự đồng ý của Người Sử Dụng.
-6. Quyền tiếp cận, chỉnh sửa thông tin của người sử 
-dụng
-6.1. Người Sử Dụng có quyền yêu cầu DriveManager thực
+5.2.4. Có sự đồng ý của Người Sử Dụng.</h1>
+        </div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>6. Quyền tiếp cận, chỉnh sửa thông tin của người sử 
+dụng:</h1>
+          <h1>6.1. Người Sử Dụng có quyền yêu cầu DriveManager thực
 hiện việc kiểm tra, cập nhật, điều chỉnh hợp hủy bỏ thông tin 
 của Người Sử Dụng. DriveManager có nghĩa vụ kiểm tra, cập 
 nhật, điều chỉnh, hủy bỏ thông tin của Người Sử Dụng khi có 
@@ -215,9 +196,11 @@ của DriveManager.
 6.3. Dừng nhận thông báo của ứng dụng DriveManager 
 từ các quyền trong thiết bị truy cập bằng cách tùy chỉnh các 
 quyền trong thiết bị truy cập theo quy định của các nền tảng di
-động (iOS, Android, v.v.).
-7. Các biện pháp bảo đảm an toàn bảo mật thông tin
-7.1. DriveManager cam kết và sử dụng các phương pháp 
+động (iOS, Android, v.v.).</h1>
+        </div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>7. Các biện pháp bảo đảm an toàn bảo mật thông tin</h1>
+          <h1>7.1. DriveManager cam kết và sử dụng các phương pháp 
 hợp lý để đảm bảo an toàn, an ninh cho thông tin cá nhân được
 thu thập để ngăn ngừa các hành vi đánh cắp, tiếp cận, thay 
 đổi, phá hủy thông tin trái phép.
@@ -233,9 +216,11 @@ DriveManager sẽ hủy ngay khi đã hợp lý xác nhận rằng: (i) mục
 cho việc giữ lại các dữ liệu; hoặc (ii) việc giữ lại không còn cần 
 thiết cho bất cứ mục đích pháp lý hoặc kinh doanh nào; hoặc 
 (iii) Người Sử Dụng không có nhu cầu hay đã hoàn thành việc 
-sử dụng Tài Khoản DriveManager.
-8. Các quy định khác
-8.1. Việc DriveManager không thực hiện hoặc áp dụng 
+sử dụng Tài Khoản DriveManager.</h1>
+        </div>
+        <div className='text-xl text-left justify-center items-center mr-36 text-pretty leading-8'>
+          <h1 className='font-semibold text-2xl leading-10'>8. Các quy định khác</h1>
+          <h1>8.1. Việc DriveManager không thực hiện hoặc áp dụng 
 bất kỳ quyền hoặc biện pháp nào mà DriveManager có theo 
 quy định tại Chính Sách này hoặc theo quy định pháp luật 
 không bị xem là DriveManager từ bỏ hoặc hạn chế quyền hoặc 
@@ -272,8 +257,10 @@ mọi vấn đề liên quan đến giao dịch của Người Sử Dụng và b
 thứ ba. Trong trường hợp có khiếu nại, tranh chấp,... 
 DriveManager có toàn quyền khoá Tài Khoản DriveManager có 
 liên quan cho đến khi vấn đề được giải quyết hoặc có quyết 
-định cuối cùng của cơ quan nhà nước có thẩm quyền.
+định cuối cùng của cơ quan nhà nước có thẩm quyền.</h1>
         </div>
+        <div className='text-red-600 text-3xl mt-24'>Người Sử Dụng DriveManager phải đọc, hiểu đầy đủ và đồng ý 
+hoàn toàn với các nội dung của Chính Sách này.</div>
     </div>
 
   )

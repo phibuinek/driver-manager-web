@@ -5,7 +5,12 @@ import { AiFillApple, AiFillAndroid } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer id='footer' className="bg-gray-800 text-white p-10">
+    <footer id='footer' className=" text-white p-10 bg-footer"   style={{
+      backgroundImage: "url('/assets/footer.jpg') ",
+      backgroundPosition: "center ", // Thay đổi giá trị ở đây
+      //backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+    }}>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-20">
         {/* Logo and description */}
         <div className='block'>

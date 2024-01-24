@@ -32,7 +32,7 @@ const HeroSection = () => {
         <div className="flex-1">
           {/* Here you should insert your image component or an img tag referencing your illustration */}
           {/* <img src="/path-to-your-illustration.png" alt="Illustration" /> */}
-          <Image src={require("../../../../public/assets/banner/banner1.png")} alt=""
+          <Image src={require("../../../../public/assets/hinhanh.jpg")} alt=""
           width={540}  // Adjust the width as per your requirement
           height={320} // Adjust the height as per your requirement
           layout="responsive" // This will make the image responsive

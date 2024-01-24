@@ -4,61 +4,93 @@ import illustration from '../../../../public/assets/banner/hightlight-img.png'; 
 
 const HighlightSection = () => {
   return (
-    <div className="flex items-center justify-center bg-green-100 py-12 px-6 md:px-12 m-16">
-      {/* Illustration on the left */}
-      <div className="hidden md:block md:w-1/2">
-        <Image
-          src={illustration}
-          alt="Illustration"
-          width={500} // Adjust based on your actual image's aspect ratio
-          height={300} // Adjust based on your actual image's aspect ratio
-        />
-      </div>
-
-      {/* Text content on the right */}
-      <div className="md:w-1/2">
-       <div className='py-4'>
-       <h2 className="text-3xl font-bold mb-4">ĐIỂM NỔI BẬT</h2>
-        <p className="text-lg mb-2 font-light">
-          Nền tảng tối ưu dành cho doanh nghiệp lữ khách
-        </p>
-        <div className='border border-[#2FA060] w-[25%]'></div>
-       </div>
-        <div className="my-4">
-          <div className="mb-4">
-            <h3 className="text-2xl font-bold text-[#000000]">
-              Tối ưu quản lý thành viên
-            </h3>
-            <p className="mt-2 text-[#000000]">
-              Chức năng thêm, xóa sửa các thành viên doanh nghiệp
-            </p>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-2xl font-bold text-[#000000]">
-              An toàn và bảo mật
-            </h3>
-            <p className="mt-2 text-[#000000]">
-              Ứng dụng có chứng nhận bảo mật của quốc tế
-            </p>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-2xl font-bold text-[#000000]">
-              Sử dụng ứng dụng miễn phí
-            </h3>
-            <p className="mt-2 text-[#000000]">
-              Trải nghiệm ứng dụng miễn phí với các tính năng ưu việt
-            </p>
-          </div>
-          <div className="mb-4">
-            <h3 className="text-2xl font-bold text-[#000000]">
-              Quản lý thông kê số liệu rõ ràng
-            </h3>
-            <p className="mt-2 text-[#000000]">
-              Quản lý lượng nhân viên, thông kê doanh thu cho doanh nghiệp
-            </p>
-          </div>
+    <div className='items-center justify-center text-center'>
+        <div className=' items-center justify-center flex bg-button border-2 text-white text-3xl py-4 rounded-2xl font-semibold mx-96'>ĐẶC ĐIỂM NỔI BẬT</div>
+        <div className='grid grid-cols-4 gap-10 mx-14'>
+            <div className='col-span-1 mt-10'>
+              <div className='rounded-lg bg-gray-200 shadow-2xl shadow-gray-400 mix-blend-darken'>
+                {/* <div className='rounded-lg bg-green-400 mx-10 py-2 my-4 text-white'>TỐI ƯU QUẢN LÝ THÀNH VIÊN</div> */}
+                <div className='flex  text-center justify-center'>
+                    <div className='rounded-lg bg-gradient-to-r from-[#21d6b9] to-[#65de76] py-2 mt-6 mb-4 px-4 text-white'>TỐI ƯU QUẢN LÝ THÀNH VIÊN</div>
+                </div>
+                <div className='flex'>
+                <ul className='list-image-point text-left ml-10 mb-24 mr-10'>
+                  <li className='list-disc'>Hệ thống đồng bộ giúp theo dõi vị
+                  trí và hoạt động của mỗi thành viên
+                  trong đội xe.</li>
+                  <li className='list-disc'>Giao diện thân thiện, dễ sử dụng
+                  giúp quản lý thông tin cá nhân, vị
+                  trí làm việc, và lịch trình một cách
+                  hiệu quả.</li>
+                  <li className='list-disc'>Cung cấp công cụ đánh giá hiệu
+                  suất cá nhân và tổ chức đội nhóm
+                  một cách chính xác.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div className='col-span-1 mt-10'>
+              <div className='rounded-lg bg-gray-200 shadow-2xl shadow-gray-400 mix-blend-darken'>
+                {/* <div className='rounded-lg bg-green-400 mx-10 py-2 my-4 text-white'>TỐI ƯU QUẢN LÝ THÀNH VIÊN</div> */}
+                <div className='flex  text-center justify-center'>
+                    <div className='rounded-lg bg-gradient-to-r from-[#21d6b9] to-[#65de76] py-2 mt-6 mb-4 px-4 text-white'>AN TOÀN VÀ BẢO MẬT</div>
+                </div>
+                <div className='flex'>
+                <ul className='list-image-point text-left ml-10 mb-44 mr-10'>
+                  <li className='list-disc'>Hệ thống mã hóa mạnh mẽ đảm
+                  bảo an toàn dữ liệu về thông tin cá
+                  nhân, vị trí và hoạt động của đội
+                  xe.</li>
+                  <li className='list-disc'>Cảnh báo và thông báo tức thì về
+                  các tình huống rủi ro để ngăn chặn
+                  sự cố và đảm bảo an toàn.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div className='col-span-1 mt-10'>
+              <div className='rounded-lg bg-gray-200 shadow-2xl shadow-gray-400 mix-blend-darken'>
+                {/* <div className='rounded-lg bg-green-400 mx-10 py-2 my-4 text-white'>TỐI ƯU QUẢN LÝ THÀNH VIÊN</div> */}
+                <div className='flex  text-center justify-center'>
+                    <div className='rounded-lg bg-gradient-to-r from-[#21d6b9] to-[#65de76] py-2 mt-6 mb-4 px-4 text-white'>QUẢN LÝ THỐNG KÊ SỐ LIỆU</div>
+                </div>
+                <div className='flex'>
+                <ul className='list-image-point text-left ml-10 mb-14 mr-10'>
+                  <li className='list-disc'>Bảng thống kê tự động cung cấp cái
+                  nhìn tổng quan về hiệu suất và hoạt
+                  động của đội xe.</li>
+                  <li className='list-disc'>Tích hợp các công cụ phân tích dữ
+                  liệu để đưa ra các đánh giá chi tiết về
+                  mức tiêu thụ nhiên liệu, thời gian hoạt
+                  động và các chỉ số khác.</li>
+                  <li className='list-disc'>Hệ thống báo cáo đa dạng giúp
+                  doanh nghiệp đưa ra quyết định dựa
+                  trên dữ liệu chính xác và chi tiết.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
+            <div className='col-span-1 mt-10'>
+              <div className='rounded-lg bg-gray-200 shadow-2xl shadow-gray-400 mix-blend-darken'>
+                {/* <div className='rounded-lg bg-green-400 mx-10 py-2 my-4 text-white'>TỐI ƯU QUẢN LÝ THÀNH VIÊN</div> */}
+                <div className='flex  text-center justify-center'>
+                    <div className='rounded-lg bg-gradient-to-r from-[#21d6b9] to-[#65de76] py-2 mt-6 mb-4 px-4 text-white'>SỬ DỤNG ỨNG DỤNG MIỄN PHÍ</div>
+                </div>
+                <div className='flex'>
+                <ul className='list-image-point text-left ml-10 mb-32 mr-10'>
+                  <li className='list-disc'>Ứng dụng cung cấp các tính năng
+                  cơ bản miễn phí với giao diện thân
+                  thiện để hỗ trợ doanh nghiệp quản
+                  lý cơ bản vận tải và vận hành đội
+                  xe.</li>
+                  <li className='list-disc'>Hỗ trợ đa nền tảng, giúp doanh
+                  nghiệp tiết kiệm chi phí và tận dụng
+                  ứng dụng trên nhiều thiết bị.</li>
+                </ul>
+                </div>
+              </div>
+            </div>
         </div>
-      </div>
     </div>
   );
 };

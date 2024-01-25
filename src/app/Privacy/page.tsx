@@ -30,7 +30,7 @@ const privacyPage = () => {
     </header>
       <div className=' mx-auto w-1/2 my-20 '>
         <div className='text-6xl text-center font-bold'>ĐIỀU KHOẢN SỬ DỤNG</div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>1. Phạm vi áp dụng</div>
           <div>Chính sách này quy định về cách thức mà DriveManager thu 
           thập, sử dụng, bảo mật thông tin áp dụng đối với các thông tin 
@@ -40,7 +40,7 @@ const privacyPage = () => {
           DriveManager.
           </div>
         </div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>2. Mục đích thu thập thông tin:</div>
           <div>Người Sử Dụng đồng ý rằng DriveManager có quyền thu thập, 
           sử dụng, lưu trữ, tiết lộ và trao đổi các thông tin về Người Sử 
@@ -105,19 +105,19 @@ const privacyPage = () => {
           <div className='mt-2'><b>2.6.3.</b> Cung cấp cho các cơ quan nhà nước có thẩm quyền
           hoặc cung cấp thông tin theo yêu cầu của pháp luật.</div>
         </div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>3. Các thông tin khách hàng được thu thập</div>
           <div>DriveManager sẽ thu thập các loại thông tin sau đây:
           </div>
           <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'><b>3.1.</b> Thông tin khi Người Sử Dụng mở Tài Khoản 
           DriveManager</div>
           <ul className='list-disc'>
-            <li>Email đăng ký</li>
-            <li>Tên doanh nghiệp</li>
-            <li>Mã số doanh nghiệp và MST (nếu tổ chức có MST khác mã số doanh nghiệp)</li>
-            <li>Địa chỉ doanh nghiệp</li>
-            <li>Email liên hệ</li>
-            <li>Số điện thoại thông tin về người đại diện hợp pháp của tổ chức{' '}</li>
+            <li className='ml-10'>Email đăng ký</li>
+            <li className='ml-10'>Tên doanh nghiệp</li>
+            <li className='ml-10'>Mã số doanh nghiệp và MST (nếu tổ chức có MST khác mã số doanh nghiệp)</li>
+            <li className='ml-10'>Địa chỉ doanh nghiệp</li>
+            <li className='ml-10'>Email liên hệ</li>
+            <li className='ml-10'>Số điện thoại thông tin về người đại diện hợp pháp của tổ chức{' '}</li>
           </ul>
           <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'><b>3.2.</b> Thông tin được DriveManager gửi cho Người Sử
           Dụng</div>
@@ -172,7 +172,7 @@ const privacyPage = () => {
           tuân thủ và có thể tiếp tục tuân thủ tất cả các nghĩa vụ của 
           mình theo Chính Sách của DriveManager hay không.</div>
         </div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>4. Phạm vi sử dụng thông tin</div>
           <div className='mt-2'><b>4.1.</b> Ngoài các mục đích được nêu trong Chính Sách này, 
           DriveManager cam kết không chuyển nhượng, cho thuê, tiết lộ,
@@ -183,20 +183,22 @@ const privacyPage = () => {
           </div>
           <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'>4.2. Mục đích chia sẻ và tiết lộ thông tin</div>
           <div className='mt-2'><b>4.2.1.</b> Theo yêu cầu của Người Sử Dụng, bao gồm:</div>
-          <div className='mt-2'>- Chia sẻ thông tin của Người Sử Dụng với bên thứ ba là 
+          <ul>
+          <li className='mt-2 ml-10'>- Chia sẻ thông tin của Người Sử Dụng với bên thứ ba là 
           các đối tác, doanh nghiệp hợp tác theo yêu cầu của Người Sử 
-          Dụng;</div>
-          <div className='mt-2'>- Cho mục đích tại Điều khoản này, các bên thứ ba có thể 
+          Dụng;</li>
+          <li className='mt-2 ml-10'>- Cho mục đích tại Điều khoản này, các bên thứ ba có thể 
           là: (i) các ứng dụng hoặc trang web khác tích hợp API của 
           DriveManager; (iii) hoặc các đối tác doanh nghiệp của 
-          DriveManager.</div>
-          <div className='mt-2'>- Trong trường hợp DriveManager chia sẻ thông tin với 
+          DriveManager.</li>
+          <li className='mt-2 ml-10'>- Trong trường hợp DriveManager chia sẻ thông tin với 
           các bên thứ ba, để đảm bảo việc bảo mật thông tin của Người 
           Sử Dụng, giữa DriveManager và các bên thứ ba sẽ quy định rõ 
           ràng và nghiệm ngặt các yêu cầu đối với việc các bên thứ ba 
           phải có nghĩa bảo mật các thông tin của Người Sử Dụng dựa 
           trên các điều khoản và điều kiện mà DriveManager đã cam kết 
-          với Người Sử Dụng theo quy định của Chính Sách này.</div>
+          với Người Sử Dụng theo quy định của Chính Sách này.</li>
+          </ul>
           <div className='mt-2'><b>4.2.2.</b> Với công chúng khi Người Sử Dụng gửi nội dung lên
           diễn đàn công cộng do DriveManager lập, bao gồm: Các thông 
           tin được Người Sử Dụng đăng tải trên các diễn đàn công cộng 
@@ -213,7 +215,7 @@ const privacyPage = () => {
           giải quyết gian lận và hoạt động phi pháp khác.</div>
           <div className='mt-2'><b>4..2.4.</b> Có sự đồng ý của Người Sử Dụng.</div>
         </div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>5. Quyền tiếp cận, chỉnh sửa thông tin của người sử 
           dụng</div>
           <div className='mt-2'><b>5.1.</b> Người Sử Dụng có quyền yêu cầu DriveManager thực
@@ -235,7 +237,7 @@ const privacyPage = () => {
           động (iOS, Android, v.v.).  
           </div>
         </div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>6. Các biện pháp bảo đảm an toàn bảo mật thông tin 
           </div>
           <div className='mt-2'><b>6.1.</b> DriveManager cam kết và sử dụng các phương pháp 
@@ -259,7 +261,7 @@ const privacyPage = () => {
           sử dụng Tài Khoản DriveManager. 
           </div>
         </div>
-        <div className=' flex flex-col justify-stretch items-baseline text-left text-2xl'>
+        <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
           <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>7. Các quy định khác 
           </div>
           <div className='mt-2'><b>7.1.</b> Việc DriveManager không thực hiện hoặc áp dụng 
@@ -306,7 +308,7 @@ const privacyPage = () => {
           định cuối cùng của cơ quan nhà nước có thẩm quyền.
           </div>
         </div>
-        <div className='text-red-500 mt-20 flex flex-col justify-stretch items-baseline text-center text-4xl'>
+        <div className='text-primary mt-20 flex flex-col justify-stretch items-baseline text-left text-lg'>
         Người Sử Dụng DriveManager phải đọc, hiểu đầy đủ và đồng ý 
         hoàn toàn với các nội dung của Chính Sách này.
         </div>

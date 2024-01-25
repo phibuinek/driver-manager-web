@@ -46,7 +46,7 @@ const Header = () => {
         </div>
         <div className="flex items-center space-x-20 font-semibold">   
           <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#">Trang chủ</a></button>
-          <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#product">Sản phẩm</a></button>
+          {/* <button className="active:text-primary hover:text-primary focus:text-primary"><a href="#product">Sản phẩm</a></button> */}
           <button className="active:text-primary hover:text-primary focus:text-primary">
           
           <a href="/Privacy">Điều khoản</a>

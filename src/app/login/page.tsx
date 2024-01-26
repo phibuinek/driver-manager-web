@@ -31,7 +31,7 @@ const LoginPage = () => {
       }}
     >
       <div className="absolute top-0 left-0 p-4 flex items-center sm:left-5 md:left-10 lg:left-15">
-        <img src="/assets/logo/logo-app.png" alt="Logo" className="h-8 mr-1" />
+        <Image src="/assets/logo/logo-app.png" alt="Logo" className="h-8 mr-1" />
         <h1 className="text-green-500 uppercase font-bold">Driver Manager</h1>
       </div>
 

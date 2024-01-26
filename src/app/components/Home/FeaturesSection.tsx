@@ -51,10 +51,10 @@ const FeaturesSection = () => {
   return (
     <div className=" m-16">
       <div className="grid grid-cols-4 space-x-5">
-        <div className="col-span-1  mt-40">
-          <div className="my-48 mx-4 border-2 rounded-lg outline-1 shadow-lg shadow-gray-400 outline-gray-200">
+        <div className="col-span-1  mt-44 mb-28  border-2 rounded-lg outline-1 shadow-lg shadow-gray-400 outline-gray-200">
+          <div className="my-48 mx-4">
             <div className="text-2xl text-center justify-center items-center rounded-2xl bg-gradient-to-r from-[#21d6b9] to-[#65de76] text-white font-bold mx-4 my-4 py-2">VƯỢT TRỘI - TIN CẬY</div>
-            <div className="block text-5xl mx-6 text-center leading-12 text-primary font-medium my-12">NHỮNG LỢI ÍCH CHÚNG TÔI CAM KẾT VỚI KHÁCH HÀNG</div>
+            <div className="block text-5xl mx-6 text-center leading-12 text-primary font-medium my-20">NHỮNG LỢI ÍCH CHÚNG TÔI CAM KẾT VỚI KHÁCH HÀNG</div>
           </div>
         </div>
         <div className="col-span-3 grid grid-rows-3 space-y-0">

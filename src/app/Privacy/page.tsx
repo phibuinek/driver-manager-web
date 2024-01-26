@@ -4,6 +4,10 @@ import Image from 'next/image'
 import Link from "next/link";
 import Footer from '../components/Footer';
 const privacyPage = () => {
+  const yearTime = () => {
+    const showDate = new Date();
+    var displayYear = showDate.getFullYear();
+  }
   return (
     <div>
       <header className="py-4">
@@ -27,7 +31,7 @@ const privacyPage = () => {
             Đăng nhập
         </Link>
       </div>
-    </header>
+      </header>
       <div className=' mx-auto w-1/2 my-20 '>
         <div className='text-6xl text-center font-bold'>ĐIỀU KHOẢN SỬ DỤNG</div>
         <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
@@ -96,7 +100,8 @@ const privacyPage = () => {
           Sử Dụng theo thông tin DriveManager thu thập được từ Người 
           Sử Dụng;</div>
           <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'><b>2.6.</b> Thực hiện các thủ tục và yêu cầu pháp lý 
-          DriveManager có thể sử dụng thông tin thu thập được để</div>
+          DriveManager</div>
+          <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'> có thể sử dụng thông tin thu thập được để</div>
           <div className='mt-2'><b>2.6.1.</b> Điều tra hoặc giải quyết các khiếu nại hoặc tranh 
           chấp liên quan đến việc sử dụng ứng dụng DriveManager từ 
           Người Sử Dụng;</div>
@@ -125,8 +130,9 @@ const privacyPage = () => {
           trang web và tài khoản mạng xã hội;</div>
           <div className='mt-2'><b>3.2.2.</b> Kích hoạt các tính năng cho phép DriveManager 
           truy cập vào ảnh hoặc vị trí thiết bị của Người Sử Dụng.</div>
-          <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'><b>3.3.</b> Thông tin được tạo ra khi Người Sử Dụng dùng 
-          ứng dụng DriveManager</div>
+          <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'><b>3.3.</b> Thông tin được tạo ra khi Người Sử Dụng dùng ứng dụng 
+          </div>
+          <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'>DriveManager</div>
           <div className='mt-2'><b>3.3.1.</b> Cập nhật thông tin Tài Khoản DriveManager.</div>
           <div className='mt-2'><b>3.3.2.</b> Nếu được Người Sử Dụng cho phép, DriveManager 
           sẽ thu thập thông tin vị trí của thiết bị truy cập của Người Sử 
@@ -159,7 +165,8 @@ const privacyPage = () => {
           nhật ký máy chủ, có thể bao gồm các thông tin như thời gian, 
           hành động, tài khoản thực hiện,...</div>
           <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'>3.4 Các thông tin khác DriveManager cần thu thập 
-          nhằm tuân thủ nghĩa vụ pháp lý</div>
+          nhằm</div>
+          <div className='text-2xl leading-10 mb-2 mt-2 text-balance truncate font-semibold'>tuân thủ nghĩa vụ pháp lý</div>
           <div className='mt-2'>DriveManager sẽ yêu cầu Người Sử Dụng cung cấp các 
           thông tin liên quan đến việc sử dụng ứng dụng của 
           DriveManager mà DriveManager có thể yêu cầu một cách hợp 
@@ -216,7 +223,8 @@ const privacyPage = () => {
           <div className='mt-2'><b>4..2.4.</b> Có sự đồng ý của Người Sử Dụng.</div>
         </div>
         <div className=' flex flex-col justify-stretch items-baseline text-left text-base'>
-          <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>5. Quyền tiếp cận, chỉnh sửa thông tin của người sử 
+          <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>5. Quyền tiếp cận, chỉnh sửa thông tin của người </div>
+          <div className=' text-3xl mt-10 mb-4 leading-10 text-balance truncate font-semibold'>sử 
           dụng</div>
           <div className='mt-2'><b>5.1.</b> Người Sử Dụng có quyền yêu cầu DriveManager thực
           hiện việc kiểm tra, cập nhật, điều chỉnh hợp hủy bỏ thông tin 

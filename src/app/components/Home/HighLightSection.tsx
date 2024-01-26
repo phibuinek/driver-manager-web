@@ -5,7 +5,7 @@ import illustration from '../../../../public/assets/banner/hightlight-img.png'; 
 const HighlightSection = () => {
   return (
     <div className='items-center justify-center text-center'>
-        <div className=' items-center justify-center flex bg-button border-2 text-white text-3xl py-4 rounded-2xl font-semibold mx-96'>ĐẶC ĐIỂM NỔI BẬT</div>
+        <div className=' items-center justify-center flex bg-button border-2 text-white text-3xl py-4 mt-32 rounded-2xl font-semibold mx-96'>ĐẶC ĐIỂM NỔI BẬT</div>
         <div className='grid grid-cols-4 gap-10 mx-14'>
             <div className='col-span-1 mt-10'>
               <div className='rounded-lg bg-gray-200 shadow-2xl shadow-gray-400 mix-blend-darken'>

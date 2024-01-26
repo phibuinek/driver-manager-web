@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import Image from 'next/image';
 
 const options = ['Tự lái', 'Tài xế','Đi bộ']
@@ -7,31 +7,36 @@ const optionsTaiXe = ['Huy', 'Hùng', 'Vũ']
 const optionsPhuXe = ['H', 'A', 'VA']
 const optionsXe = ['Vario', 'SH', 'VA']
 const Modal = ({isVisible, onClose}) => {
-    if(!isVisible) {return null};
     const [isOpen,setIsOpen] = useState(false);
-    const toggling = () => setIsOpen(!isOpen);
+    const [isOpen1,setIsOpen1] = useState(false);
+    const [isOpen2,setIsOpen2] = useState(false);
+    const [isOpen3,setIsOpen3] = useState(false);
     const [selectedOption, isSelectedOption] = useState(null);
+    const [selectedOption1, isSelectedOption1] = useState(null);
+    const [selectedOption2, isSelectedOption2] = useState(null);
+    const [selectedOption3, isSelectedOption3] = useState(null);
+
+
+    if(!isVisible) {return null};
+
+
+    const toggling = () => setIsOpen(!isOpen);
+ 
     const onOptionClicked = (value) => {
             isSelectedOption(value);
             setIsOpen(false);
     }
-    const [isOpen1,setIsOpen1] = useState(false);
     const toggling1 = () => setIsOpen1(!isOpen1);
-    const [selectedOption1, isSelectedOption1] = useState(null);
     const onOptionClicked1 = (value) => {
             isSelectedOption1(value);
             setIsOpen1(false);
     }
-    const [isOpen2,setIsOpen2] = useState(false);
     const toggling2 = () => setIsOpen2(!isOpen2);
-    const [selectedOption2, isSelectedOption2] = useState(null);
     const onOptionClicked2 = (value) => {
             isSelectedOption2(value);
             setIsOpen2(false);
     }
-    const [isOpen3,setIsOpen3] = useState(false);
     const toggling3 = () => setIsOpen3(!isOpen3);
-    const [selectedOption3, isSelectedOption3] = useState(null);
     const onOptionClicked3 = (value) => {
             isSelectedOption3(value);
             setIsOpen3(false);

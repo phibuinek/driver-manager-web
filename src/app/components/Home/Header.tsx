@@ -120,7 +120,7 @@ const Header = () => {
             </li>
             <li className="border-b border-gray-200">
               <a
-                href="/#Privacy"
+                href="/privacy"
                 className="block py-2 px-4 text-lg hover:bg-gray-100 text-white"
               >
                 Điều khoản

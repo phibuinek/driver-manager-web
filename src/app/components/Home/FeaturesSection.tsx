@@ -153,6 +153,26 @@ const FeaturesSection = () => {
             NHỮNG LỢI ÍCH CHÚNG TÔI CAM KẾT VỚI KHÁCH HÀNG
           </h1>
         </div>
+        <div className="flex">
+          <ul>
+            <li className="text-xs rounded-xl list-none mx-6 text-left leading-12 text-black bg-gray-100 font-medium mt-4">
+              Đội Ngũ Hỗ Trợ Chuyên Nghiệp: Cam kết đưa ra đội ngũ hỗ trợ chuyên
+              nghiệp, sẵn sàng giải đáp mọi thắc mắc và hỗ trợ khách hàng trong
+              quá trình sử dụng.
+            </li>
+
+            <li className="text-xs list-none mx-6 text-left leading-12 text-black font-medium mt-4">
+              Hướng Dẫn Sử Dụng Chi Tiết: Cung cấp hướng dẫn sử dụng chi tiết và
+              tài nguyên học liệu để giúp người dùng nắm vững chức năng và tận
+              dụng đầy đủ tiềm năng của hệ thống.
+            </li>
+            <li className="text-xs list-none mx-6 text-left leading-12 text-black font-medium mt-4">
+              Liên Tục Cải Tiến: Tích cực lắng nghe phản hồi từ khách hàng và
+              liên tục cải tiến hệ thống để đảm bảo rằng nó luôn đáp ứng được
+              các nhu cầu và mong muốn mới nhất của người dùng.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
